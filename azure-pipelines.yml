@@ -34,15 +34,3 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: kiuwan-baseline-analysis-task@2
-  inputs:
-    kiuwanConnection: 'Kiuwan'
-    projectnameselector: 'kiuwanapp'
-    kiuwanappname: 'Demo'
-    includeinsight: true
-    uploadsnippets: true
-    uploadfiles: false
-    skipclones: false
-    overridedotkiuwan: false
-    overrideappmodel: false
-    dbanalysis: false
