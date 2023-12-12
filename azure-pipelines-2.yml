@@ -6,19 +6,6 @@
 
 trigger:
 - main
-- task: kiuwan-delivery-analysis-task@2
-  inputs:
-    kiuwanConnection: 'Kiuwan'
-    projectnameselector: 'kiuwanapp'
-    kiuwanappname: 'Spiracle'
-    analysisscope: 'completeDelivery'
-    includeinsight: true
-    failonaudit: true
-    uploadsnippets: true
-    uploadfiles: false
-    skipclones: false
-    overridedotkiuwan: false
-    dbanalysis: false
 pool:
   vmImage: 'windows-latest'
 
