@@ -5,18 +5,6 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- task: kiuwan-baseline-analysis-task@2
-  inputs:
-    kiuwanConnection: 'Kiuwan'
-    projectnameselector: 'kiuwanapp'
-    kiuwanappname: 'Spiracle'
-    includeinsight: true
-    uploadsnippets: true
-    uploadfiles: false
-    skipclones: false
-    overridedotkiuwan: false
-    overrideappmodel: false
-    dbanalysis: false
 - main
 
 pool:
