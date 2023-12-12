@@ -31,4 +31,4 @@ steps:
     skipclones: false
     overridedotkiuwan: false
     overrideappmodel: false
-    dbanalysis: false
+    dbanalysis: true
