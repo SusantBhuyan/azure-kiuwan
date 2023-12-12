@@ -1,26 +1,7 @@
-# Maven
-
-
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
-trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
-
 steps:
-- task: kiuwan-baseline-analysis-task@2
+- task: kiuwan-publisher.kiuwan-analysis-extension.kiuwan-bl-analysis-task.kiuwan-baseline-analysis-task@2
+  displayName: 'Kiuwan baseline analysis'
   inputs:
-    kiuwanConnection: 'Kiuwan'
-    projectnameselector: 'kiuwanapp'
-    kiuwanappname: 'Spiracle'
-    includeinsight: true
-    uploadsnippets: true
-    uploadfiles: false
-    skipclones: false
-    overridedotkiuwan: false
-    overrideappmodel: false
-    dbanalysis: false
+    kiuwanConnection: Kiuwan
+    projectnameselector: kiuwanapp
+    kiuwanappname: Spiracle
