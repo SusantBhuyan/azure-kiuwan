@@ -6,6 +6,17 @@
 
 trigger:
 - main
+- task: kiuwan-baseline-analysis-task@2
+  inputs:
+    projectnameselector: 'kiuwanapp'
+    kiuwanappname: 'Spiracle'
+    includeinsight: true
+    uploadsnippets: true
+    uploadfiles: false
+    skipclones: false
+    overridedotkiuwan: false
+    overrideappmodel: false
+    dbanalysis: false
 pool:
   vmImage: 'windows-latest'
 
