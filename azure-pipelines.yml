@@ -1,4 +1,15 @@
 steps:
+- task: kiuwan-baseline-analysis-task@2
+  inputs:
+    kiuwanConnection: 'Demo'
+    projectnameselector: 'default'
+    includeinsight: true
+    uploadsnippets: true
+    uploadfiles: false
+    skipclones: false
+    overridedotkiuwan: false
+    overrideappmodel: false
+    dbanalysis: false
 - task: kiuwan-publisher.kiuwan-analysis-extension.kiuwan-bl-analysis-task.kiuwan-baseline-analysis-task@2
   displayName: 'Kiuwan baseline analysis'
   inputs:
